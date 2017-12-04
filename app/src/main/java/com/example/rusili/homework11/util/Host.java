@@ -5,7 +5,7 @@ package com.example.rusili.homework11.util;
  */
 
 public enum  Host {
-    PokeAPI("https://pokeapi.co/api/v2/");
+    PokeAPI("http://pokeapi.co/api/v2/");
 
     private final String url;
 

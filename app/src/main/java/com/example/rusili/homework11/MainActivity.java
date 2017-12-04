@@ -28,6 +28,6 @@ public class MainActivity  extends AppCompatActivity{
         .replace(R.id.main_container, new PokedexFragment())
         .commit();
 
-
+        Toast.makeText(this, "FRAG", Toast.LENGTH_SHORT).show();
     }
 }

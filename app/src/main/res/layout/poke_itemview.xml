@@ -2,56 +2,48 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp"
-    >
+    android:padding="4dp">
 
 
     <android.support.v7.widget.CardView
         android:id="@+id/poke_cardview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         >
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/poke_number"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"/>
-    <ImageView
-        android:padding="10dp"
-        android:id="@+id/poke_image"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        />
+            <TextView
+                android:id="@+id/poke_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
 
-    <TextView
-        android:id="@+id/poke_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        />
+            <ImageView
+                android:id="@+id/poke_image"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:padding="10dp" />
 
+            <TextView
+                android:id="@+id/poke_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
 
-
-
-
-        <Button
-            android:id="@+id/poke_stat"
-            android:text="Stats"
-            android:textColor="#fff"
-            android:textSize="12sp"
-            android:background="@drawable/shape"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/poke_stat"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/shape"
+                android:text="Stats"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 </FrameLayout>

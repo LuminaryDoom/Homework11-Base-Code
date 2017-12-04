@@ -3,6 +3,7 @@ package com.example.rusili.homework11.detailscreen.view;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -80,9 +81,9 @@ public class PokemonDetailActivity extends AppCompatActivity {
 
                 nameString.setText(getIntent().getStringExtra("Pokename"));
                 Glide.with(context)
-                        .load(pokemon.getSprites().getFront_default())
-                        .placeholder(R.mipmap.ic_launcher)
-                        .override(400, 400)
+                        .load(pokemon.getSprites().getFront_shiny())
+                        .placeholder(R.drawable.pokeballicon)
+                        .override(300, 300)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .into(pokemon_img);
 

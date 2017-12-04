@@ -62,8 +62,8 @@ public class PokedexViewHolder extends RecyclerView.ViewHolder implements View.O
 
         Glide.with(context)
                 .load(url)
-                .placeholder(R.mipmap.ic_launcher)
-                .override(200, 125)
+                .placeholder(R.drawable.pokeballicon)
+                .override(50, 50)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(pokeimage);
     }

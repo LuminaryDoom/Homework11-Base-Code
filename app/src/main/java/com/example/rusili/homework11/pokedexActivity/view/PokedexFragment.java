@@ -44,13 +44,11 @@ public class PokedexFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.pokedex_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
+        getPokedexList();
 
         fab = view.findViewById(R.id.fab);
         setFabButton();
 
-
-        getPokedexList();
 
         return view;
 
